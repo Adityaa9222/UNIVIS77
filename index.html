@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univis - IOC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Univis</div>
+        <ul class="nav-links">
+            <li><button><a href="#floor-plan">Floor Plan</a></button></li>
+            <li><button><a href="#amenities">Amenities</a></button></li>
+            <li><button><a href="#gallery">Gallery</a></button></li>
+            <li><button><a href="#location">Location</a></button></li>
+            <li><button><a href="#contact">Contact Us</a></button></li>
+        </ul>
+    </nav>
+
+    <!-- Phone Icon -->
+    <div class="phone-icon">
+        <i class="fas fa-phone-alt ringing"></i>
+        <span class="phone-number">+91 706 667 1777</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <picture>
+            <source media="(max-width: 768px)" srcset="1920.jpg">
+            <img src="univis1.jpg" alt="Univis Site" class="hero-img">
+        </picture>
+        <div class="hero-content">
+            <h1>Univis by IOC<sup>®</sup></h1>
+        </div>
+    </section>
+
+    <!-- Floor Plan Section -->
+    <section id="floor-plan" class="section">
+        <h2>Floor Plans</h2>
+        <div class="floor-plan-container animate-on-scroll">
+            <button class="arrow left">←</button>
+            <img src="QQ.jpg" alt="Floor Plan" class="floor-plan-img">
+            <button class="arrow right">→</button>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section amenities-section">
+        <h2>Amenities</h2>
+        <div class="amenities-container">
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-plug"></i>
+                <h3>Generator Backup</h3>
+                <p>Continuous power supply with high-capacity generator backup ensures your home stays lit and functional during unexpected outages.</p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Open Gym</h3>
+                <p>Fully equipped open gym designed for fitness lovers, featuring  a spacious, motivating workout environment.</p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-tree"></i>
+                <h3>Jogging Track</h3>
+                <p>Beautifully landscaped garden offering a serene green retreat for relaxation, morning walks, and peaceful evenings with nature.</p>
+            </div>
+            
+
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-building"></i>
+                <h3>Earthquake Resistant</h3>
+                <p>Built with advanced structural design and quality materials, the building is earthquake resistant, ensuring maximum safety and stability during seismic activity.</p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-leaf"></i>
+                <h3>Green Initiative</h3>
+                <p>Eco-conscious living with rainwater harvesting, Solar Pannel Hot Water, and energy-efficient systems promoting sustainable and responsible urban living.</p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Advance Security System</h3>
+                <p>24/7 surveillance with CCTV cameras, intercom facility, and secure gated entry to ensure safety for every resident.</p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Premium Paint</h3>
+                <p>Exteriors and interiors finished with high-quality, weather-resistant, and long-lasting premium paints for a stylish, fresh look.
+
+                </p>
+            </div>
+            <div class="amenity-card animate-on-scroll">
+                <i class="fas fa-elevator"></i>
+                <h3>Branded Elevator</h3>
+                <p>Smooth and reliable elevator experience with top-branded lifts ensuring comfort, safety, and efficiency in vertical movement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="img1.jpg" alt="Gallery 1" class="gallery-img animate-on-scroll">
+            <img src="univis1.jpg" alt="Gallery 2" class="gallery-img animate-on-scroll">
+            <img src="img4.jpg" alt="Gallery 3" class="gallery-img animate-on-scroll">
+
+
+            <img src="img5.jpg" alt="Gallery 1" class="gallery-img animate-on-scroll">
+            <img src="ov4.jpeg" alt="Gallery 2" class="gallery-img animate-on-scroll">
+            <img src="gym.jpeg" alt="Gallery 3" class="gallery-img animate-on-scroll">
+
+
+            
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <h2>Location Advantages</h2>
+        <div class="location-points">
+            <div class="point animate-on-scroll" onclick="toggleDetails(this)">
+                <h3>School & College</h3>
+                <ul class="details hidden">
+                    
+                   <li>Saplings School - 0.5 Km</li>
+          <li>Orchid School - 0.6 Km</li>
+          <li>Vibgyor School - 1 Km</li>
+          <li>MITCON Institute - 1.8 Km</li>
+          <li>Moze College of Engineering - 2.1 Km</li>
+         
+          <li>Pune University - 5.7 Km</li>
+                </ul>
+            </div>
+            <div class="point animate-on-scroll" onclick="toggleDetails(this)">
+                <h3>Hospital</h3>
+                <ul class="details hidden">
+                    
+            <li>Manipal Hospital - 1 Km</li>
+          <li>Jupiter Hospital - 1.1 Km</li>
+          <li>Sanjivani Medipoint Hospital - 3.5 km</li>
+                </ul>
+            </div>
+            <div class="point animate-on-scroll" onclick="toggleDetails(this)">
+                <h3>Entertainment</h3>
+                <ul class="details hidden">
+                   <li>Balewadi High Street - 0.7 Km</li>
+          <li>Nexus Westend Mall - 4.2 Km</li>
+          <li>Butterfly Trampoline Park - 5.1 Km</li>
+                </ul>
+            </div>
+            <div class="point animate-on-scroll" onclick="toggleDetails(this)">
+                <h3>Shopping</h3>
+                <ul class="details hidden">
+                    <li>Monte Carlo - 1.6 Km</li>
+                    <li>Westside - 1.7 Km</li>
+                    <li>Xion Mall - 3 Km</li>
+    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="enquiry-form" class="enquiry-form animate-on-scroll">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <button type="submit" class="submit-btn">Send Enquiry</button>
+        </form>
+        <div class="map animate-on-scroll">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.212151969097!2d73.7759841746531!3d18.564471767832803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe0292e0dad%3A0xe198edb745967649!2sUNIVIS!5e0!3m2!1sen!2sin!4v1743963295703!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info animate-on-scroll">
+            <div>Address: <p>UNIVIS,Opposite Regency Cosmos,<br>Baner Road Pune,Maharashtra 411045.</p> </div>
+            <div>RERA Number: P52100054531</div>
+            <div><img class="rerapng" src="rera.png" alt="Maha RERA"></div>
+        </div>
+        <div class="footer-logo animate-on-scroll">
+            <h3>Project By</h3>
+            <img src="logo56.jpg" alt="IOC Logo">
+        </div>
+        <p class="disclaimer animate-on-scroll"> The images shown are artist's impressions and are for representation purposes only and should not be construed as a promise made by the developer for amenities in the building/apartment.
+            The delivery of the product will be as per the mutually agreedlist of amenities which will be finalized the purchaser individually and mentate the agreement.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
